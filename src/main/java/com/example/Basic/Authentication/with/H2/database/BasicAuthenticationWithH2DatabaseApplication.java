@@ -8,6 +8,7 @@ public class BasicAuthenticationWithH2DatabaseApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BasicAuthenticationWithH2DatabaseApplication.class, args);
+		System.out.println("Running...");
 	}
 
 }
