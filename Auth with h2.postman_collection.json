@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "69f1c17a-8403-4d19-a8ea-5be584a5677c",
+		"name": "Auth with h2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33957944"
+	},
+	"item": [
+		{
+			"name": "Add endusers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\":\"arun\",\r\n        \"email\":\"arun@gamil.com\",\r\n        \"password\":\"arun1234\"\r\n    }\r\n    ,\r\n    {\r\n        \"name\":\"ammu\",\r\n        \"email\":\"ammu@gamil.com\",\r\n        \"password\":\"ammu1234\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addEndUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addEndUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/endUserData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endUserData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
